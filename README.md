@@ -1,70 +1,112 @@
-# Getting Started with Create React App
+# 🍽️ Party Menu Selection App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A ReactJS web application built as part of **TheChefkart Assignment**.  
+The app allows users to browse categorized dishes, filter by Veg/Non-Veg, search by name, view ingredients in a modal, and add/remove items to create a personalized party menu.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Live Demo
+👉 [party-menu-app-lilac.vercel.app](https://party-menu-app-lilac.vercel.app/)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 📌 Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Categorized Dishes**  
+  - Tabs for **Starters**, **Main Course**, **Desserts**, and **Sides**  
+  - Each tab displays dishes only from that category  
 
-### `npm test`
+- **Filters & Search**  
+  - Search bar to find dishes by name  
+  - Veg/Non-Veg toggle with Swiggy/Zomato style icons  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Dish Cards**  
+  - Dish name, description (with *Read More / Read Less*), and image  
+  - Add / Remove button to manage selections  
+  - Ingredient button to view detailed ingredients in a modal  
 
-### `npm run build`
+- **Ingredient Modal**  
+  - Displays dish image, category, description, and ingredients  
+  - Close button for easy navigation  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Selection Summary**  
+  - Count of dishes selected per category  
+  - Footer with total dishes selected and a Continue button  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🛠️ Tech Stack
 
-### `npm run eject`
+- **Frontend**: React (Functional Components, Hooks, JSX, Conditional Rendering, .map)  
+- **Styling**: CSS (Flexbox, custom styles for Veg/Non-Veg icons, modal, tabs)  
+- **Deployment**: Vercel  
+- **Version Control**: Git & GitHub  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## ⚙️ Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Clone the repository**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   git clone https://github.com/Bhoomika-Macha/party-menu-app.git
+   cd party-menu-app
 
-## Learn More
+2. **Install dependencies**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    ```bash
+    npm install
+    Run locally
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    ```bash
+    npm start
+    Opens at http://localhost:3000
 
-### Code Splitting
+3. **Build for production**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    ```bash
+    npm run build
+Outputs static files to build/ (used for deployment on Vercel).
 
-### Analyzing the Bundle Size
+## 📖 How It Works
+User clicks a category tab → App filters dishes by category.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+User types in search bar → Filters by dish name.
 
-### Making a Progressive Web App
+User toggles Veg Only → Shows only vegetarian dishes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+User clicks Add + → Dish is added to selection (count updates).
 
-### Advanced Configuration
+User clicks Remove → Dish is removed from selection.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+User clicks 🍲 Ingredient → Modal opens with dish details.
 
-### Deployment
+User clicks Close → Modal closes and returns to menu.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Footer shows total selected dishes + Continue button.
 
-### `npm run build` fails to minify
+✅ Deliverables
+Dish listing screen with category tabs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Search and Veg/Non-Veg filters
+
+Add/Remove functionality
+
+Summary of selected items
+
+Ingredient detail modal
+
+Public GitHub repository
+
+Deployed app on Vercel
+
+## 🔮 Future Improvements
+Price and total cost calculation
+
+Save selections to local storage or backend
+
+Mobile responsive UI
+
+User login and menu persistence
+
+
