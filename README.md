@@ -85,7 +85,7 @@ User clicks Close → Modal closes and returns to menu.
 
 Footer shows total selected dishes + Continue button.
 
-✅ Deliverables
+## ✅ Deliverables
 Dish listing screen with category tabs
 
 Search and Veg/Non-Veg filters
